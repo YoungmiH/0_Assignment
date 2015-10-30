@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <p>
+       <a href="index.html"> Back to Home Page</a>
+     </p>
+     <script type="text/javascript">
+     var design1 = function() {
+       this.name = 'Mobile Design'
+       this.img = '3.jpg'
+       this.des = 'Design Mobile UI and graphic assets through reserching UX '
+       this.display = function () {
+         document.write('<br><br><h3>'+this.name+'</h3>', '<img width="600px" src="'+ this.img + '">', '<h5>'+this.des+'</h5>');
+      }
+    }
+    var item1 = new design1();
+
+    var design2 = function() {
+      this.name = 'TV Design'
+      this.img = '15.jpg'
+      this.des = 'Design TV UI and graphic assets through reserching UX '
+      this.display = function () {
+        document.write('<br><br><h3>'+this.name+'</h3>', '<img width="600px" src="'+ this.img + '">', '<h5>'+this.des+'</h5>');
+     }
+    }
+    var item2 = new design2();
+
+    var design3 = function() {
+      this.name = 'WEB Design'
+      this.img = '4.png'
+      this.des = 'Design Web UI and graphic assets through reserching UX '
+      this.display = function () {
+        document.write('<br><br><h3>'+this.name+'</h3>', '<img width="600px" src="'+ this.img + '">', '<h5>'+this.des+'</h5>');
+     }
+    }
+
+    var item3 = new design3();
+
+    var firstname = prompt('enter your first name')
+    var lastname = prompt('enter your last name')
+    alert( 'welcome to the product page,' + firstname + lastname)
+    var choice = prompt('Please select item: Mobile design, TV design. Web design if you want to all, you can say all.')
+
+    //while (true) {
+      if (choice == 'Mobile design'){
+        item1.display();
+      }
+      else if (choice == 'TV design'){
+        item2.display();
+      }
+      else if (choice == 'Web design'){
+        item3.display();
+      }    else if (choice == 'all'){
+        item1.display();
+        item2.display();
+        item3.display();
+      } else {
+        choice = prompt('Please enter a valid answer, try again enter one of the following (Mobile design, TV design, Web design, all)')
+      }
+  //  }
+
+     </script>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p>
+     <a href="index.html"> Back to Home Page</a>
+   </p>
+    <script type="text/javascript">
+
+    var Title = ["Mobile Design","TV Screen", "Web Design","Tablet Design"];
+    var Category = ["Price", "Work Period","Software","Employee"];
+    var Mobile = new Array("$500", "3 Month", "Photoshop", "3");
+    var Tv = new Array("$800", "5 Month", "Photoshop", "2");
+    var Web = new Array("$1000", "6 Month", "Photoshop", "3");
+    var Tablet = new Array("$400", "2 Month", "Photoshop", "2");
+
+    var sales = new Array(Mobile, Tv, Web, Tablet);
+
+    document.write("<table border=1px width=600px height=200px>");
+
+    document.write("<tr><th>"+ " " + "</th>");
+    for (j=0; j<4; j++){
+    document.write("<th>" +Category[j] + "</th>");
+    }
+    document.write("</tr>");
+
+    for (i=0; i<4; i++){
+    document.write("<tr><th>" +Title[i] + "</th>");
+
+    for (k=0; k<4; k++){
+    document.write("<td>" + sales[i][k] + "</td>");
+    }
+    document.write("</tr>");
+    }
+    document.write("</table>");
+    </script>
+  </body>
+</html>

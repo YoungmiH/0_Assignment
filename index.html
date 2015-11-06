@@ -51,7 +51,6 @@
 				height: 30px;
 				color: #000000;
 				text-align: center;
-
 				border-radius: 12px;
 			}
 			.little:hover {
@@ -95,9 +94,9 @@
 			}
 
 			.row {
-				margin-left: 200px;
+				margin-left: 20px;
 				margin-top: 0px;
-				width: 1000px;
+				width: 1400px;
 
 			}
 			.jumbotron {
@@ -122,9 +121,11 @@
 				background-image: url(previewpage_nor.png);
 			}
 			.hire{
-
 				font-size: 20px;
 				text-align: center;
+			}
+			.title{
+				margin-left: 30px;
 
 			}
 
@@ -133,60 +134,16 @@
 
 		var counter=0, max=10;
 
-		function jobWin() {
-			jobWin=window.open("",null,"height=300,width=500,scrollable,resizable");
-			jobWin.focus();
-			jobWin.document.write('<a href="javascript:window.opener.job1Win()">Graphic Designer</a><br>');
-			jobWin.document.write('<a href="javascript:window.opener.job2Win()">Front-end Developer</a><br>');
-
+		function mobile1() {
+			mobile1=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+			mobile1.document.write("<img src='1.jpg' width='1000px'>");
+			mobile1.focus();
 			}
-			function job1Counter() {
-				counter++;
-				job1Win.document.write("The counter is now at " + counter + "<br>");
-				if (counter < max) {
-					setTimeout(job1Counter,500);
-					} else {
-					job1Win.close();
+			function mobile1() {
+				mobile1=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+				mobile1.document.write("<img src='1.jpg' width='1000px'>");
+				mobile1.focus();
 				}
-			}
-		function job1Win() {
-			job1Win=window.open("",null,"height=300,width=500,resizable,scrollbars");
-			job1Win.document.write("<p> We are looking for a passionate Graphic Designer to join our office!</p>");
-			job1Win.document.write("<ul><li>Graphic design : layout, branding, illustration</li>");
-			job1Win.document.write("<li>Digital design for our social media channels<li>");
-			job1Win.document.write("<li>Posters, signage, booklets, flyers and accessories design (Tshirts, schwag)</li>");
-			job1Win.document.write("<li>Motion graphics and video</li>");
-			job1Win.document.write("<li>Branding, signage, and communication assets to support live events and other promotional channels</li>");
-			job1Win.document.write("<li>Website creation, support, and management</li></ul>");
-			setTimeout(job1Counter,500);
-			job1Win.focus();
-		}
-
-
-
-		function job2Counter() {
-			counter++;
-			job2Win.document.write("The counter is now at " + counter + "<br>");
-			if (counter < max) {
-				setTimeout(job2Counter,500);
-				} else {
-				job2Win.close();
-			}
-		}
-
-		function job2Win() {
-			job2Win=window.open("",null,"height=300,width=500,scrollbars,resizable");
-			job2Win.document.write("<p> We are looking for a passionate Front-end Developer to join our office!</p>");
-			job2Win.document.write("<ul><li>Document and communicate front-end development best practices.</li>");
-			job2Win.document.write("<li>Build new and maintain existing features.<li>");
-			job2Win.document.write("<li>Daily communication between all stakeholders including but not limited to UX, Product, Backend, and various departments.</li>");
-			job2Win.document.write("<li>Create libraries and frameworks to support various systems.</li>");
-			job2Win.document.write("<li>Convert mockups, and user stories into full fledge products.</li>");
-			job2Win.document.write("<li>Implement unit tests to help increase code coverage.</li></ul>");
-			setTimeout(job2Counter,500);
-			job2Win.focus();
-		}
-
 
 		</script>
 
@@ -251,11 +208,6 @@
 		<!--			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
 			  </a>
 
-				<div>
-					<p>
-					<a class="hire" href="javascript:window.jobWin()">We are Hiring!</a>
-					</p>
-				</div>
 
 
 			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
@@ -264,22 +216,36 @@
 			  </a>
 			</div>
 
+			<div class = "title"><h3>Mobile UX</h3></div>
 					<div class="row">
-					  <div class="col-xs-6 col-md-3">
-					    <a href="#" class="thumbnail">
-					      <img src="3.jpg" alt="...">
+						<div class="col-xs-6 col-md-3">
+					    <a href="javascript:window.mobile1()" class="thumbnail">
+					      <img src="1.jpg" alt="...">
 							</a>
-
-					  </div>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="javascript:window.mobile2()" class="thumbnail">
+								<img src="2.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="#" class="thumbnail">
+								<img src="3.jpg" alt="...">
+							</a>
+						</div>
 						<div class="col-xs-6 col-md-3">
 							<a href="#" class="thumbnail">
 								<img src="4.jpg" alt="...">
 							</a>
 						</div>
-
+						<div class="col-xs-6 col-md-3">
+							<a href="#" class="thumbnail">
+								<img src="5.jpg" alt="...">
+							</a>
+						</div>
 					</div>
 
-				</div>
+			</div>
 
 </div>
 

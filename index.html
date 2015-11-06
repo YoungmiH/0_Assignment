@@ -16,7 +16,7 @@
 				text-decoration:none;
 				}
 				a:hover  {
-				color:white;
+				color:black;
 				text-decoration:none;
 			}
 				html, body {
@@ -71,7 +71,7 @@
 				text-align: center;
 				/*width: 400px;*/
 				margin-top: 10px;
-				color: #FFFFFF;
+				color: #000000;
 				font-size: 14px;
 				font-family: 'Ubuntu', sans-serif;
 			}
@@ -81,7 +81,7 @@
 				width:100%;
 				height:60px;
 				background: #626262;
-				color: white;
+				color: black;
 				font-family:sans-serif;
 				text-align: center;
 				padding-top: 60px;
@@ -121,11 +121,75 @@
 			.left{
 				background-image: url(previewpage_nor.png);
 			}
+			.hire{
+
+				font-size: 20px;
+				text-align: center;
+
+			}
+
 		</style>
 		<script type="text/javascript">
 
+		var counter=0, max=10;
+
+		function jobWin() {
+			jobWin=window.open("",null,"height=300,width=500,scrollable,resizable");
+			jobWin.focus();
+			jobWin.document.write('<a href="javascript:window.opener.job1Win()">Graphic Designer</a><br>');
+			jobWin.document.write('<a href="javascript:window.opener.job2Win()">Front-end Developer</a><br>');
+
+			}
+			function job1Counter() {
+				counter++;
+				job1Win.document.write("The counter is now at " + counter + "<br>");
+				if (counter < max) {
+					setTimeout(job1Counter,500);
+					} else {
+					job1Win.close();
+				}
+			}
+		function job1Win() {
+			job1Win=window.open("",null,"height=300,width=500,resizable,scrollbars");
+			job1Win.document.write("<p> We are looking for a passionate Graphic Designer to join our office!</p>");
+			job1Win.document.write("<ul><li>Graphic design : layout, branding, illustration</li>");
+			job1Win.document.write("<li>Digital design for our social media channels<li>");
+			job1Win.document.write("<li>Posters, signage, booklets, flyers and accessories design (Tshirts, schwag)</li>");
+			job1Win.document.write("<li>Motion graphics and video</li>");
+			job1Win.document.write("<li>Branding, signage, and communication assets to support live events and other promotional channels</li>");
+			job1Win.document.write("<li>Website creation, support, and management</li></ul>");
+			setTimeout(job1Counter,500);
+			job1Win.focus();
+		}
+
+
+
+		function job2Counter() {
+			counter++;
+			job2Win.document.write("The counter is now at " + counter + "<br>");
+			if (counter < max) {
+				setTimeout(job2Counter,500);
+				} else {
+				job2Win.close();
+			}
+		}
+
+		function job2Win() {
+			job2Win=window.open("",null,"height=300,width=500,scrollbars,resizable");
+			job2Win.document.write("<p> We are looking for a passionate Front-end Developer to join our office!</p>");
+			job2Win.document.write("<ul><li>Document and communicate front-end development best practices.</li>");
+			job2Win.document.write("<li>Build new and maintain existing features.<li>");
+			job2Win.document.write("<li>Daily communication between all stakeholders including but not limited to UX, Product, Backend, and various departments.</li>");
+			job2Win.document.write("<li>Create libraries and frameworks to support various systems.</li>");
+			job2Win.document.write("<li>Convert mockups, and user stories into full fledge products.</li>");
+			job2Win.document.write("<li>Implement unit tests to help increase code coverage.</li></ul>");
+			setTimeout(job2Counter,500);
+			job2Win.focus();
+		}
+
 
 		</script>
+
 
 <div class="page-wrap">
 
@@ -157,6 +221,7 @@
 
 			<div class="line"> </div>
 
+
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
@@ -185,23 +250,19 @@
 			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 		<!--			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
 			  </a>
+
+				<div>
+					<p>
+					<a class="hire" href="javascript:window.jobWin()">We are Hiring!</a>
+					</p>
+				</div>
+
+
 			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 			<!--    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
 			    <span class="sr-only">Next</span>
 			  </a>
 			</div>
-
-<!--				<div class="contents">
-					<div class="row youngmi">
-						<div class="jumbotron">
-						  <h1>Welcome to My Page</h1>
-							<p>My name is Youngmi Howe</p>
-						  <p>UI Developer / UX Designer</p>
-							<p>in San Francisco</p>
-						  <p><a class="btn btn-primary btn-lg" href="aboutus.html" role="button">GO PROFILE</a></p>
-						</div>
-					</div>
-				-->
 
 					<div class="row">
 					  <div class="col-xs-6 col-md-3">
@@ -215,6 +276,7 @@
 								<img src="4.jpg" alt="...">
 							</a>
 						</div>
+
 					</div>
 
 				</div>

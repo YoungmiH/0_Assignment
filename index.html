@@ -110,8 +110,9 @@
 
 			.youngmi{
 				background-image: url(bg1.jpg);
+
 				height: 400px;
-				width: 1000;
+				width: 800;
 				margin-bottom: 30px;
 			}
 			.carousel slide{
@@ -151,9 +152,14 @@
 			}
 		function mobile4() {
 			mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-			mobile4.document.write("<img src='3.jpg' width='1000px'>");
+			mobile4.document.write("<img src='4.jpg' width='1000px'>");
 			mobile4.focus();
 			}
+			function mobile5() {
+				mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+				mobile4.document.write("<img src='5.jpg' width='1000px'>");
+				mobile4.focus();
+				}
 		</script>
 
 
@@ -198,31 +204,16 @@
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
+
+				  <div class="item active">
 			      <img src="bg1.jpg" alt="...">
-			      <div class="carousel-caption">
-			        <p>Hi</p>
-			      </div>
 			    </div>
-			    <div class="item">
+
+				  <div class="item">
 			      <img src="bg1.jpg" alt="...">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
 			    </div>
 			  </div>
 
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		<!--			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-			  </a>
-
-
-
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<!--    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-			    <span class="sr-only">Next</span>
-			  </a>
 			</div>
 
 			<div class = "title"><h3>Mobile UX</h3></div>
@@ -248,7 +239,7 @@
 							</a>
 						</div>
 						<div class="col-xs-6 col-md-3">
-							<a href="#" class="thumbnail">
+							<a href="javascript:window.mobile5()" class="thumbnail">
 								<img src="5.jpg" alt="...">
 							</a>
 						</div>

@@ -2,99 +2,198 @@
 <html>
 <head>
 		<title></title>
-		<!--<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<link href="bootstrap.min.css" rel="stylesheet" media="screen">-->
+		<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+		<link hert="bootstrap.min.js">
+
 </head>
 <body>
 		<style>
+		@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+		@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 				a {
-					color:#6f7c98;
-					text-decoration:none;
+				font-family: 'Josefin Sans', sans-serif;
+				text-decoration:none;
 				}
-				a:hover {
-				color:white;
+				a:hover  {
+				color:black;
 				text-decoration:none;
 			}
-				.page-wrap {
-				min-height: 100%;
-				margin-bottom: -90px;
-				}
-				.logo-container {
-					margin: 0 auto;
-					width: 352px;
-					margin-top: 20px;
-				}
-					.big {
-						width: 430px;
-						margin: 0 auto;
-					}
-						.little {
-							font-family:sans-serif;
-							margin-top: 30px;
-							float: left;
-							width: 100px;
-							height: 30px;
-							background-color: #FFFFFF;
-							color: #6f7c98;
-							padding-top: 10px;
-							text-align: center;
-							border-radius: 12px;
-						}
-						.little:hover {
-						background-color: #6f7c98;
-						color: white;
-						}
-				.contents		 {
-					margin: 0 auto;
-					text-align: center;
-					padding-top: 100px;
-					padding-bottom: 100px;
-					margin-top: 10px;
-					margin-bottom: 40px;
-					color: #6f7c98;
-					font-size: 13px;
-					font-family:sans-serif;
-				}
-				.site-footer {
+				html, body {
+				height: 100%;
+			}
+
+			.logo-container {
+				width: 100%
+				margin-top: 10px;
+				margin-bottom: 10px;
+				height: 60px;
+			}
+			.line{
+				height: 1px;
+				background-color: #787878;
+				padding-top: 0px;
+			}
+			.big {
+				display: inline-block;
+    		width: auto;
+    		height: auto;
+    		float: right;
+				margin: auto;
+				margin-right: 20px;
+				color: #000000;
+
+			}
+			.little {
+				margin-top: 10px;
+				float: left;
+				width: 130px;
+				height: 30px;
+				color: #000000;
+				text-align: center;
+				border-radius: 12px;
+			}
+			.little:hover {
+				color: #787878;
+			}
+			.intro-container {
+				width: 352px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.page-wrap {
+				min-height: 75%;
+				margin-bottom: 60px;
+		}
+			.contents		 {
+				margin: 0 auto;
+				text-align: center;
+				/*width: 400px;*/
+				margin-top: 10px;
+				color: #000000;
+				font-size: 14px;
+				font-family: 'Ubuntu', sans-serif;
+			}
+			.site-footer {
 				position:relative;
 				bottom:0;
 				width:100%;
 				height:60px;
-				background: #6f7c98;
-				color: white;
+				background: #626262;
+				color: black;
 				font-family:sans-serif;
 				text-align: center;
 				padding-top: 60px;
 				font-size: 13px;
-				}
-		</style>
+			}
+			.thumbnail {
+			margin: 10px;
+			position:	static;
+			width: 400px;
+			height: 250px;
+			}
 
-		<div class="page-wrap">
-			<div class="logo-container">
-		 	<img class="logo" src=logo.jpg>
+			.row {
+				margin-left: 20px;
+				margin-top: 0px;
+				width: 1400px;
+
+			}
+			.jumbotron {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+
+			.col-xs-6 {
+				display: inline-block;
+			}
+
+			.youngmi{
+				background-image: url(bg1.jpg);
+
+				height: 400px;
+				width: 800;
+				margin-bottom: 30px;
+			}
+			.carousel slide{
+				height: 500px;
+			}
+			.left{
+				background-image: url(previewpage_nor.png);
+			}
+			.hire{
+				font-size: 20px;
+				text-align: center;
+			}
+			.title{
+				margin-left: 30px;
+
+			}
+		</style>
+		<script type="text/javascript">
+
+		var counter=0, max=10;
+
+		function mobile1() {
+			mobile1=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+			mobile1.document.write("<img src='1.jpg' width='1000px'>");
+			mobile1.focus();
+			}
+		function mobile2() {
+			mobile2=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+			mobile2.document.write("<img src='2.jpg' width='1000px'>");
+			mobile2.focus();
+			}
+		function mobile3() {
+			mobile3=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+			mobile3.document.write("<img src='3.jpg' width='1000px'>");
+			mobile3.focus();
+			}
+		function mobile4() {
+			mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+			mobile4.document.write("<img src='4.jpg' width='1000px'>");
+			mobile4.focus();
+			}
+			function mobile5() {
+				mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+				mobile4.document.write("<img src='5.jpg' width='1000px'>");
+				mobile4.focus();
+				}
+		</script>
+
+
+<div class="page-wrap">
+
+		<div class="logo-container">
+			<a href="index.html"><img class="logo" src=youngmihome.png> </a>
+				<div class="big" type="text/javascript">
+
+					<div class="little" onclick="alert('Nice to meet you :)')"><a href="aboutus.html">
+					PROFILE
+					</a></div>
+
+					<div class="little"> <a href="porfolio.html">
+					PORTFOLIO
+					</a></div>
+
+					<div class="little"> <a href="contactus.html">
+					CONTACT ME
+					</a></div>
+				</div>
+		</div>
+
+			<div class="line">
 			</div>
 
-			<div class="big" script type="text/javascript">
-							<div class="little"> <a href="index.html">
-								Home
-							</a></div>
 
-							<div class="little" onclick="alert('Nice to meet you :)')"><a href="aboutus.html">
-								Profile
-							</a></div>
 
-							<div class="little" onclick="prompt('What is my name?')"> <a href="porfolio.html">
-								Portfolio
-							</a></div>
-
-							<div class="little" onclick="confirm('Do you want contact me?')"> <a href="contactus.html">
-								Contact me
-							</a></div></div>
 
 				<div class="contents">
 
 					<p>Mobile UX</p>
-					<img class="img" src="1.jpg" width="600">
+
+					<div class="imagebox">
+						<img class="img" id="image" src="1.jpg" width="100%">
+					</div>
 					<img class="img" src="2.jpg" width="600">
 					<img class="img" src="3.jpg" width="600">
 					<img class="img" src="4.jpg" width="600">
@@ -119,8 +218,28 @@
 			</div>
 
 			<footer class="site-footer">
-				http://voyager.deanza.edu/~20226151/assignments/index.html
+			Youngmi.ml
 			</footer>
-	</body>
+			<script src="jquery-2.1.4.min.js"></script>
+			<script src="bootstrap.min.js"></script>
+			<script>
 
-</html>
+			var test = false;
+						 $('.imagebox').click(function() {
+								 if (test) {
+										 $('.imagebox').animate({
+													 width: '50%'
+										 }, 5000);
+								 } else {
+										 $('.imagebox').animate({
+													 width: '100%'
+										 }, 5000);
+								 }
+
+								 test = !test;
+						 });
+
+			</script>
+
+				</body>
+			</html>

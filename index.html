@@ -1,251 +1,305 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title></title>
-		<link href="bootstrap.min.css" rel="stylesheet" media="screen">
-		<link hert="bootstrap.min.js">
-
+	<title></title>
+	<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+	<link hert="bootstrap.min.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-		<style>
-		@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-		@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-				a {
-				font-family: 'Josefin Sans', sans-serif;
-				text-decoration:none;
-				}
-				a:hover  {
-				color:black;
-				text-decoration:none;
-			}
-				html, body {
-				height: 100%;
-			}
 
-			.logo-container {
-				width: 100%
-				margin-top: 10px;
-				margin-bottom: 10px;
-				height: 60px;
-			}
-			.line{
-				height: 1px;
-				background-color: #787878;
-				padding-top: 0px;
-			}
-			.big {
-				display: inline-block;
-    		width: auto;
-    		height: auto;
-    		float: right;
-				margin: auto;
-				margin-right: 20px;
-				color: #000000;
 
-			}
-			.little {
-				margin-top: 10px;
-				float: left;
-				width: 130px;
-				height: 30px;
-				color: #000000;
-				text-align: center;
-				border-radius: 12px;
-			}
-			.little:hover {
-				color: #787878;
-			}
-			.intro-container {
-				width: 352px;
-				margin: 0 auto;
-				position: relative;
-			}
-			.page-wrap {
-				min-height: 75%;
-				margin-bottom: 60px;
-		}
-			.contents		 {
-				margin: 0 auto;
-				text-align: center;
-				/*width: 400px;*/
-				margin-top: 10px;
-				color: #000000;
-				font-size: 14px;
-				font-family: 'Ubuntu', sans-serif;
-			}
-			.site-footer {
-				position:relative;
-				bottom:0;
-				width:100%;
-				height:60px;
-				background: #626262;
-				color: black;
-				font-family:sans-serif;
-				text-align: center;
-				padding-top: 60px;
-				font-size: 13px;
-			}
-			.thumbnail {
-			margin: 10px;
-			position:	static;
-			width: 400px;
-			height: 250px;
-			}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:300');
 
-			.row {
-				margin-left: 20px;
-				margin-top: 0px;
-				width: 1400px;
+a{
+	text-decoration: none;
+}
+a:hover  {
+	text-decoration:none;
+}
+html, body {
+	height: 100%;
+}
 
-			}
-			.jumbotron {
-				padding-top: 80px;
-				padding-bottom: 80px;
-			}
+.page-wrap {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1400px;
+}
 
-			.col-xs-6 {
-				display: inline-block;
-			}
+.logo-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
 
-			.youngmi{
-				background-image: url(bg1.jpg);
-				background-image: url(bg2.jpg);
+	font-size: 30px;
+	line-height: 50px;
+	float: left;
+	width: 50%;
+	font-family: 'Rokkitt', serif;
+	color: #000000;
 
-				height: 400px;
-				width: 1000;
-				margin-bottom: 30px;
-			}
-			.carousel slide{
-				height: 500px;
-			}
-			.left{
-				background-image: url(previewpage_nor.png);
-			}
-			.hire{
-				font-size: 20px;
-				text-align: center;
-			}
-			.title{
-				margin-left: 30px;
+}
 
-			}
-		</style>
-		<script type="text/javascript">
+.menu {
+	margin-top: 25px;
+	margin-right: 30px;
+	float: left;
+	width: 130px;
+	height: 30px;
+	text-align: right;
+	vertical-align: middle;
+	line-height: 50px;       /* the same as your div height */
+	border-radius: 12px;
+	font-size: 14px;
 
-		var counter=0, max=10;
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration:none;
 
-		function mobile1() {
-			mobile1=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-			mobile1.document.write("<img src='1.jpg' width='1000px'>");
-			mobile1.focus();
-			}
-		function mobile2() {
-			mobile2=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-			mobile2.document.write("<img src='2.jpg' width='1000px'>");
-			mobile2.focus();
-			}
-		function mobile3() {
-			mobile3=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-			mobile3.document.write("<img src='3.jpg' width='1000px'>");
-			mobile3.focus();
-			}
-		function mobile4() {
-			mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-			mobile4.document.write("<img src='4.jpg' width='1000px'>");
-			mobile4.focus();
-			}
-			function mobile5() {
-				mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
-				mobile4.document.write("<img src='5.jpg' width='1000px'>");
-				mobile4.focus();
-				}
-		</script>
+}
+
+.carousel slide{
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery {
+	margin-left: 25px;
+	margin-right: 20px;
+}
+.gallery_img {
+	float: left;
+	padding: 10px;
+}
+
+.big {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	float: right;
+	margin: auto;
+	margin-right: 20px;
+	font-size: 16px;
+}
+
+.menu:hover {
+	color: #787878;
+}
+.intro-container {
+	width: 352px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contents		 {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+	color: #000000;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.thumbnail {
+	margin: 10px;
+	position:	static;
+	width: 400px;
+	height: 250px;
+}
+
+.jumbotron {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.col-xs-6 {
+	display: inline-block;
+
+}
+.youngmi{
+	background-image: url(bg1.jpg);
+	background-image: url(bg2.jpg);
+
+	height: 400px;
+	width: 1000;
+	margin-bottom: 30px;
+}
+
+.left{
+	background-image: url(previewpage_nor.png);
+}
+.hire{
+	font-size: 20px;
+	text-align: center;
+}
+.title{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: 'Rokkitt', serif;
+	text-decoration: none;
+	color:#999999;
+	font-size: 13px;
+
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+
+var counter=0, max=10;
+
+function mobile1() {
+	mobile1=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+	mobile1.document.write("<img src='1.jpg'>");
+	mobile1.focus();
+}
+function mobile2() {
+	mobile2=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+	mobile2.document.write("<img src='2.jpg'>");
+	mobile2.focus();
+}
+function mobile3() {
+	mobile3=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+	mobile3.document.write("<img src='3.jpg'>");
+	mobile3.focus();
+}
+function mobile4() {
+	mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+	mobile4.document.write("<img src='4.jpg'>");
+	mobile4.focus();
+}
+function mobile5() {
+	mobile4=window.open("",null,"height=640,width=1000,left=100,top=100,scrollable,resizable");
+	mobile4.document.write("<img src='5.jpg'>");
+	mobile4.focus();
+}
+</script>
 
 
 <div class="page-wrap">
 
-		<div class="logo-container">
-			<a href="index.html"><img class="logo" src=youngmihome.png> </a>
-				<div class="big" type="text/javascript">
+	<div class="logo-container">
+		<a href="index.html" style="color:#3d3d3d;">
+			Youngmi Howe
+		</a>
+	</div>
 
-					<div class="little" onclick="alert('Nice to meet you :)')"><a href="aboutus.html">
-					PROFILE
-					</a></div>
+	<div class="big" type="text/javascript">
 
-					<div class="little"> <a href="porfolio.html">
-					PORTFOLIO
-					</a></div>
-
-					<div class="little"> <a href="contactus.html">
-					CONTACT ME
-					</a></div>
-				</div>
+		<div class="menu" onclick="alert('Nice to meet you :)')">
+			<a href="aboutus.html" style="color:#999999;">
+				PROFILE
+			</a>
 		</div>
 
-			<div class="line">
+		<div class="menu">
+			<a href="porfolio.html" style="color:#999999;">
+				PORTFOLIO
+			</a>
+		</div>
+
+		<div class="menu">
+			<a href="contactus.html" style="color:#999999;">
+				CONTACT ME
+			</a>
+		</div>
+
+	</div>
+
+
+
+	<center>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="bg1.jpg" alt="..." style="width:100%;">
+				</div>
+
+				<div class="item">
+					<img src="bg2.jpg" alt="..." style="width:100%;">
+				</div>
 			</div>
+		</div>
+	</center>
 
-<center>
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
+	<div class = "title"><h3>UX Design
 
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+		<p id="demo"></p>
+		<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d;
+		</script>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-				  <div class="item active">
-			      <img src="bg1.jpg" alt="...">
-			    </div>
+	</h3></div>
 
-				  <div class="item">
-			      <img src="bg2.jpg" alt="...">
-			    </div>
-			  </div>
+
+	<div class="gallery" >
+		<div class="gallery_img">
+			<div class="col-xs-6 col-md-3">
+				<a href="javascript:window.mobile1()" class="thumbnail">
+					<img src="1.jpg" alt="..." >
+				</a>
 			</div>
-		</center>
+		</div>
 
-			<div class = "title"><h3>Mobile UX</h3></div>
-					<div class="row">
-						<div class="col-xs-6 col-md-3">
-					    <a href="javascript:window.mobile1()" class="thumbnail">
-					      <img src="1.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<a href="javascript:window.mobile2()" class="thumbnail">
-								<img src="2.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<a href="javascript:window.mobile3()" class="thumbnail">
-								<img src="3.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<a href="javascript:window.mobile4()" class="thumbnail">
-								<img src="4.jpg" alt="...">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-3">
-							<a href="javascript:window.mobile5()" class="thumbnail">
-								<img src="5.jpg" alt="...">
-							</a>
-						</div>
-					</div>
-
+		<div class="gallery_img">
+			<div class="col-xs-6 col-md-3">
+				<a href="javascript:window.mobile2()" class="thumbnail">
+					<img src="2.jpg" alt="..." >
+				</a>
 			</div>
+		</div>
+
+		<div class="gallery_img">
+			<div class="col-xs-6 col-md-3">
+				<a href="javascript:window.mobile3()" class="thumbnail">
+					<img src="3.jpg" alt="..." >
+				</a>
+			</div>
+		</div>
+
+		<div class="gallery_img">
+			<div class="col-xs-6 col-md-3">
+				<a href="javascript:window.mobile4()" class="thumbnail">
+					<img src="4.jpg" alt="..." >
+				</a>
+			</div>
+		</div>
+
+		<div class="gallery_img">
+			<div class="col-xs-6 col-md-3">
+				<a href="javascript:window.mobile5()" class="thumbnail">
+					<img src="5.jpg" alt="..." >
+				</a>
+			</div>
+		</div>
+
+	</div>
 
 </div>
 
-<footer class="site-footer">
-Youngmi.ml
-</footer>
+
+
+
+
+
 <script src="jquery-2.1.4.min.js"></script>
 <script src="bootstrap.min.js"></script>
+</body>
 
-	</body>
 </html>

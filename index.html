@@ -4,148 +4,149 @@
 	<title></title>
 	<link href="bootstrap.min.css" rel="stylesheet" media="screen">
 	<link hert="bootstrap.min.js">
+	<script src="sketch.js" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Rokkitt:300');
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+	@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+	@import url('https://fonts.googleapis.com/css?family=Rokkitt:300');
 
-a{
-	text-decoration: none;
-}
-a:hover  {
-	text-decoration:none;
-}
-html, body {
-	height: 100%;
-}
+	a{
+		text-decoration: none;
+	}
+	a:hover  {
+		text-decoration:none;
+	}
+	html, body {
+		height: 100%;
+	}
 
-.page-wrap {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1400px;
-}
+	.page-wrap {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1400px;
+	}
 
-.logo-container {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 30px;
+	.logo-container {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 30px;
 
-	font-size: 30px;
-	line-height: 50px;
-	float: left;
-	width: 50%;
-	font-family: 'Rokkitt', serif;
-	color: #000000;
+		font-size: 30px;
+		line-height: 50px;
+		float: left;
+		width: 50%;
+		font-family: 'Rokkitt', serif;
+		color: #000000;
 
-}
+	}
 
-.menu {
-	margin-top: 25px;
-	margin-right: 30px;
-	float: left;
-	width: 130px;
-	height: 30px;
-	text-align: right;
-	vertical-align: middle;
-	line-height: 50px;       /* the same as your div height */
-	border-radius: 12px;
-	font-size: 14px;
+	.menu {
+		margin-top: 25px;
+		margin-right: 30px;
+		float: left;
+		width: 130px;
+		height: 30px;
+		text-align: right;
+		vertical-align: middle;
+		line-height: 50px;       /* the same as your div height */
+		border-radius: 12px;
+		font-size: 14px;
 
-	font-family: 'Josefin Sans', sans-serif;
-	text-decoration:none;
+		font-family: 'Josefin Sans', sans-serif;
+		text-decoration:none;
 
-}
+	}
 
-.carousel slide{
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
-}
+	.carousel slide{
+		max-width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-.gallery {
-	margin-left: 25px;
-	margin-right: 20px;
-}
-.gallery_img {
-	float: left;
-	padding: 10px;
-}
+	.gallery {
+		margin-left: 25px;
+		margin-right: 20px;
+	}
+	.gallery_img {
+		float: left;
+		padding: 10px;
+	}
 
-.big {
-	display: inline-block;
-	width: auto;
-	height: auto;
-	float: right;
-	margin: auto;
-	margin-right: 20px;
-	font-size: 16px;
-}
+	.big {
+		display: inline-block;
+		width: auto;
+		height: auto;
+		float: right;
+		margin: auto;
+		margin-right: 20px;
+		font-size: 16px;
+	}
 
-.menu:hover {
-	color: #787878;
-}
-.intro-container {
-	width: 352px;
-	margin: 0 auto;
-	position: relative;
-}
+	.menu:hover {
+		color: #787878;
+	}
+	.intro-container {
+		width: 352px;
+		margin: 0 auto;
+		position: relative;
+	}
 
-.contents		 {
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 10px;
-	color: #000000;
-	font-size: 14px;
-	font-family: 'Ubuntu', sans-serif;
-}
+	.contents		 {
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 10px;
+		color: #000000;
+		font-size: 14px;
+		font-family: 'Ubuntu', sans-serif;
+	}
 
-.thumbnail {
-	margin: 10px;
-	position:	static;
-	width: 400px;
-	height: 250px;
-}
+	.thumbnail {
+		margin: 10px;
+		position:	static;
+		width: 400px;
+		height: 250px;
+	}
 
-.jumbotron {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-.col-xs-6 {
-	display: inline-block;
+	.jumbotron {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.col-xs-6 {
+		display: inline-block;
 
-}
-.youngmi{
-	background-image: url(bg1.jpg);
-	background-image: url(bg2.jpg);
+	}
+	.youngmi{
+		background-image: url(bg1.jpg);
+		background-image: url(bg2.jpg);
 
-	height: 400px;
-	width: 1000;
-	margin-bottom: 30px;
-}
+		height: 400px;
+		width: 1000;
+		margin-bottom: 30px;
+	}
 
-.left{
-	background-image: url(previewpage_nor.png);
-}
-.hire{
-	font-size: 20px;
-	text-align: center;
-}
-.title{
-	margin-top: 50px;
-	margin-left: 50px;
-	font-family: 'Rokkitt', serif;
-	text-decoration: none;
-	color:#999999;
-	font-size: 13px;
+	.left{
+		background-image: url(previewpage_nor.png);
+	}
+	.hire{
+		font-size: 20px;
+		text-align: center;
+	}
+	.title{
+		margin-top: 50px;
+		margin-left: 50px;
+		font-family: 'Rokkitt', serif;
+		text-decoration: none;
+		color:#999999;
+		font-size: 13px;
 
 
-}
+	}
 
 </style>
 
@@ -244,8 +245,98 @@ function mobile5() {
 		var d = new Date();
 		document.getElementById("demo").innerHTML = d;
 		</script>
+		<h1 id="today"></h1>
+		<h3 id="time"></h3>
+		<script>
+		// check out http://www.w3schools.com/js/js_dates.asp
+		// variable for new date object
 
+		var d = new Date();
+
+		// ARRAY VARIABLE TO HOLD ALL THE DAYS OF THE WEEK
+
+		var day = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+
+		console.log("today is [ " + d.getDay() + "] in the getDay array");
+
+		console.log("오늘은" + day[d.getDay()] + "일");
+
+		console.log("이번달은 [" + d.getMonth() + "] in the array using the getMonth method");
+
+		var month = []; // modern way of writing: var month =new Array();
+		month[0] = "1월";
+		month[1] = "2월";
+		month[2] = "3월";
+		month[3] = "4월";
+		month[4] = "5월";
+		month[5] = "6월";
+		month[6] = "7월";
+		month[7] = "8월";
+		month[8] = "9월";
+		month[9] = "10월";
+		month[10] = "11월";
+		month[11] = "12월";
+
+
+		console.log("translating the getMonth result using an array: " + month[d.getMonth()]);
+
+		console.log("writing to the console the results of some methods on the Date object");
+		console.log("getDate: " + d.getDate());
+
+		console.log("getFullYear: " + d.getFullYear());
+
+		console.log(d.getMonth());
+		console.log(d.toLocaleDateString());
+
+		console.log("the hour in the 24 hr clock: " + d.getHours());
+
+		var hour = (d.getHours());
+
+		console.log(hour);
+		// using 24 hour result to assign am or pm to the hour
+		var amPm = " ";
+
+		if (hour >= 12){
+			amPm = " pm";
+		}else {
+			amPm = " am";
+		}
+		console.log(amPm);
+
+		//change default 24 hour time to 12 hour time
+
+		if (hour === 0){
+			hour = 12;
+		} else if (hour >= 13){
+			hour = hour - 12;
+
+		}
+		console.log(hour);
+		console.log(hour + amPm);
+
+
+		var n = day[d.getDay()];
+
+		var m = month[d.getMonth()];
+
+		var min = d.getMinutes();
+
+		if ( min >=0 && min <= 9){
+			min = "0" + min;
+		} else {
+			min = min;
+		}
+		console.log (min);
+		//http://www.w3schools.com/jsref/met_document_getelementbyid.asp
+
+		document.getElementById("today").innerHTML =
+		n + ", " + d.getDate() + " " + m + " " + d.getFullYear();
+
+		document.getElementById("time").innerHTML = hour + ":" + min + amPm;
+
+		</script>
 	</h3></div>
+
 
 
 	<div class="gallery" >
